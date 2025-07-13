@@ -4,16 +4,288 @@
 
 
 .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue" ;
   font-weight: 400;
   font-style: normal;
 }
 
 .roboto-font {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto" ;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+/* shared styles */
+
+/* fonts */
+
+.primary-font-lg{
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  color: #363958;
+}
+
+.primary-font-lg-alt{
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  color: #FF8367;
+}
+
+.primary-font-bg{
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+
+
+
+.primary-font-md{
+  font-family: "Bebas Neue" ;
+  font-size: 3rem;
+  color: #363958;
+}
+
+.primary-font-md-alt{
+  font-family: "Bebas Neue" ;
+  font-size: 3rem;
+  color: #FF8367;
+}
+
+.primary-font-sm{
+  font-family: "Bebas Neue" ;
+  font-size: 1.5rem;
+  color: #696871;
+}
+
+
+
+.secondary-font-bg{
+   font-family: "Roboto" ;
+  font-size: 2.25rem;
+  color: #363958;
+  font-weight: 700;
+}
+
+.secondary-font-md{
+   font-family: "Roboto" ;
+  font-size: 1.5rem;
+  color: #363958;
+  font-weight: 700;
+}
+
+.secondary-font-sm{
+   font-family: "Roboto" ;
+  font-size: 1rem;
+  color: #6C6C6C;
+  font-weight: 500;
+}
+
+.secondary-font-sm-btn{
+   font-family: "Roboto" ;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.secondary-font-sm-menu{
+   font-family: "Roboto" ;
+  font-size: 1rem;
+  color: #3C3C3C;
+  font-weight: 600;
+}
+
+
+
+/* ----------- */
+
+/* diplay */
+
+.display-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------- */
+
+
+/* ------------------- */
+
+
+/* global styles */
+
+header, main, footer{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main{
+  background-color: #F8F9FC;
+}
+
+/*  */
+
+/* navbar */
+
+.nav-bar{
+  justify-content: right;
+}
+
+.nav-link{
+  list-style: none;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.nav-item{
+  margin-left: 40px;
+}
+
+/* banner */
+
+.banner-container{
+ flex-direction: column;
+ /* margin-left: 30px; */
+ /* margin-right: 200px; */
+}
+
+.banner-item-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+
+}
+
+#banner-item-bottom-row{
+
+}
+
+
+.banner-item{
+  margin-left: 135px;
+  margin-top: 180px;
+}
+
+.banner-item-header{
+  width: 350px;
+  height: 160px;
+  line-height: 1;
+}
+
+.banner-item-header-description{
+  width: 310px;
+  height: 50px;
+  line-height: 1.8;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.banner-item-about{
+  
+}
+
+.banner-item-about-description{
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 130px;
+  line-height: 1.8;
+}
+
+.profile-image{
+  margin-top: -150px;
+  width: 400px;
+  height: 520px;
+}
+
+/* ----------------- */
+
+/* button */
+
+.primary-btn{
+  background: linear-gradient(to right, rgba(255, 128, 99, 1), rgba(244, 96, 96, 1));
+  width: 170px;
+  height: 60px;
+  border: none;
+  border-radius: 6px;
+
+}
+
+.download-icon{
+  height: 24px;
+  width: 24px;
+}
+
+/* ----------------- */
+
+.main-header{
+  margin-top: 80px;
+}
+
+.main-header-label{
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.main-card-container{
+  /* margin: 0 auto; */
+  margin-left: 135px;
+  margin-right: 135px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.main-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 370px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 180px;
+}
+
+.card-image{
+  width: 340px;
+  height: 210px;
+  margin-bottom: 15px;
+}
+
+.card-description{
+  padding: 15px;
+}
+
+.footer-container{
+
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-card{
+  margin: 0 auto;
+  background-image: url('/shapes/Group_33094_1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* <-- This makes the full image fit */
+  width: 900px;
+  height: 225px;
+  border: none;
+  border-radius: 30px;
+  justify-content: space-around;
+  /* padding-left: 100px; */
+  /* padding-right: 100px; */
+  
+
+
 }
